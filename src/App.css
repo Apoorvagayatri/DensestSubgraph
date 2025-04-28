@@ -1,0 +1,178 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Header and Tab styling */
+.MuiAppBar-root {
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #000000;
+  width: 100% !important;
+}
+
+.MuiTabs-root {
+  width: 100%;
+}
+
+.MuiTabs-flexContainer {
+  width: 100%;
+  display: flex !important;
+}
+
+.MuiTab-root {
+  font-family: "Times New Roman", Times, serif !important;
+  color: #000000 !important;
+  opacity: 0.7;
+  text-transform: none !important;
+  font-size: 1.1rem !important;
+  flex: 1;
+  min-width: 0 !important;
+  padding: 1rem !important;
+}
+
+.MuiTab-root.Mui-selected {
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* Typography */
+.MuiTypography-root {
+  font-family: "Times New Roman", Times, serif !important;
+  color: #000000 !important;
+}
+
+.MuiTypography-h4, 
+.MuiTypography-h6 {
+  font-weight: bold !important;
+}
+
+/* Content area styling */
+.MuiContainer-root {
+  background-color: #ffffff;
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: 100vw;
+  min-height: calc(100vh - 120px);
+}
+
+/* Paper components */
+.MuiPaper-root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Image placeholders */
+.placeholder-box {
+  background-color: #f5f5f5 !important;
+  border: 2px dashed #000000 !important;
+  width: 100%;
+}
+
+/* List styling */
+.MuiList-root {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.MuiListItem-root {
+  color: #000000;
+}
+
+/* Chip styling */
+.MuiChip-root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+
+/* Table styling */
+.MuiTableContainer-root {
+  width: 100% !important;
+}
+
+.MuiTableCell-root {
+  color: #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  font-weight: bold !important;
+  background-color: #f5f5f5 !important;
+}
+
+/* Tab indicator */
+.MuiTabs-indicator {
+  background-color: #000000 !important;
+}
+
+/* Box container for result cards */
+.result-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.result-card {
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 300px;
+}
